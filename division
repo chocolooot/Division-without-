@@ -1,0 +1,24 @@
+// Louis Anton D. Saclot
+// CSA-1
+// Dec. 13, 2015
+// This program will solve a division problem without using "/"
+
+#include <stdio.h>
+
+int main () {
+	
+	int num1=0, num2=0, quotient=0;
+	
+	printf("Enter the Numerator: \n");
+	scanf("%d", &num1);
+	printf("Enter the Denominator: \n");
+	scanf("%d", &num2);
+	
+	while(num1>=num2) {
+		
+		num1=num1-num2;
+		quotient++;
+		
+	}
+	printf("The Quotient is: %d \nThe Remainder is: %d",quotient,num1 );
+}
